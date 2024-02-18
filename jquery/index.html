@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <style>
+        .main {
+            position: relative;
+            height: 800px;
+            width: 800px;
+        }
+
+        .main .u {
+            width: 800px;
+        }
+
+        .content--money {
+            /* background: red; */
+            position: absolute;
+            top: 51%; 
+            left: 12%;
+            width: 350px;
+            height: 160px;
+            transition: .5s;
+        }
+
+        .float {
+            position: absolute;
+            top: 0%; 
+            left: 0%;
+            width: 350px;
+            height: 160px;
+            transition: .5s;
+        }
+        
+        .content--money:hover .first {
+            transform: rotate(20deg);
+            transform-origin: right;
+        }
+
+        .content--money:hover .second {
+            transform: rotate(20deg);
+            transform-origin: right;
+        }
+
+        .content--money:hover .thrid  {
+            transform: rotate(10deg);
+            transform-origin: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="u" src="/jquery/main--img.PNG">
+        <div class="content--money">
+            <img class="float second" src="/jquery/4.jpg">
+            <img class="float thrid" src="/jquery/5.jpg">
+            <img class="float first" src="/jquery/91.jpg">
+        </div>
+    </div>
+</body>
+</html>
