@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Muscat</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DynaPuff:wght@600&family=Indie+Flower&family=Kablammo&family=Merriweather:wght@300&family=Nosifer&family=Permanent+Marker&family=Playpen+Sans:wght@200;800&family=Poppins:wght@400;500;600;700;800&family=Reem+Kufi+Fun&family=Roboto+Slab:wght@600&family=Rubik:wght@400;600;800;900&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <!-- <p class="LogIn">Log in to get started</p> -->
+            <p class="header__LogIn">سجل دخول قبل ياحلو</p>
+            <div class="header__content">
+                <img class="header__img" src="first_pag_img/logo--bnak--muscat.PNG" alt="img of logo bank">
+            </div>
+            <form class="header__form">
+                <input class="header__form--user" placeholder="user" type="text" >
+                <input class="header__form--PIN" placeholder="PIN" type="text" >
+                <button class="btn btn--rightArrow">&RightArrow;</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section class="section hidning">
+            <div class="card__text">
+                <div class="content__all--money">
+                    <p class="all--money">0000-$</p>
+                </div>
+                <div class="content__show__all--money">
+                    <p class="text--money">الفلوس الحاليه</p>
+                    <span class="data--mon--years">19/1/2024</span>
+                </div>
+            </div>
+            <div class="section__cards">
+                <div class="card__left">
+                    <div class="all__cards">
+                        <div class="card card__left--white">
+                            <label class="text--in--box">تحويل فلوس</label>
+                            <form class="all__cards__form">
+                                <input type="text" class="input--box   input--yellow--first"  ></input>
+                                <input type="number" class="input--box input--yellow--last"></input>
+                                <button class="btn btn--in--box btn--in--Yellow">&rightarrow;</button>
+                                <label class="center--label">رقم الحساب المستفيد</label>
+                                <label class="center--label center--label--money1">$ المبلغ</label>
+                            </form>
+                        </div>
+
+                        <div class="card card__left--green">
+                            <label class="text--in--box">سلف</label>
+                            <form class="all__cards__form">
+                                <input type="number" class="input--box input--box--green"></input>
+                                <button class="btn btn--in--box btn--in--green">&rightarrow;</button>
+                                <label class="center--label--money2 center--label label--green--form">$ المبلغ</label>
+                            </form>
+                        </div>
+
+                        <div class="card card__left--red">
+                            <label class="text--in--box">حذف الحساب</label>
+                            <form class="all__cards__form">
+                                <input type="text" class="input--box   input--box--red--user"></input>
+                                <input type="password" class="input--box input--box--red--pin "></input>
+                                <button class="btn btn--in--box btn--in--red">&rightarrow;</button>
+                                <label class="center--label">user</label>
+                                <label class="center--label">PIN</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box__overflow">
+                        <div class="movements__row">   
+                            <div class="movements__row--green"> 2 إيداع</div>
+                            <div class="deposit__data--box">قبل 3 ايام</div>
+                            <div class="deposit__money">3000-RO</div>
+                        </div>
+                        <div class="movements__row">
+                            <div class="movements__row--red">السحب</div>
+                            <div class="withdrawal__data--box">23/4/2034</div>
+                            <div class="withdrawal__money">-370-RO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="content__timper">
+                    <p class="timer--p"> سيتم تسجيل خروجك بعد<span class="timer"> 05:00 </span></p>
+                </div>
+                <div class="info">
+                    <button class="btn btn--dowan">&downarrow;تحويل الى</button>
+                    <p class="money--in">In <span class="money--in--span footer--money"> 000-$ </span></p>
+                    <p class="money--out">Out <span class="money--out--span footer--money"> 000-$ </span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="account.js"></script>
+</body>
+</html>
